@@ -514,6 +514,13 @@ h4{
         display: block !important;
         
     }
+    #equal:active i{
+    transform: rotateZ(-90deg);
+    }
+    #equal:active ul{
+        visibility: visible;
+        opacity: 1;
+    }
     #about img{
     display: none;
     }
