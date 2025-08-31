@@ -515,13 +515,6 @@ h4{
         display: block !important;
         
     }
-    #equal:hover i{
-    transform: rotateZ(-90deg);
-    }
-    #equal:hover ul{
-        visibility: visible;
-        opacity: 1;
-    }
     #about img{
     display: none;
     }
