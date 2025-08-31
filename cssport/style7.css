@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
 body{
     background: linear-gradient(to right, rgb(36, 2, 55),rgb(90, 1, 153));
@@ -67,6 +66,7 @@ nav>ul{
     display: flex;
     align-items: center;
     gap: 50px;
+    animation: ulanim 1.9s ease;
     
 }
 #equal{
@@ -109,15 +109,15 @@ nav>ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
 }
-
 a{
     color: white;
     text-decoration: none;
 }
 nav h3{
     letter-spacing: 5px;
+    animation: prtanim 1.9s ease;
 }
 span{
     color: #46b5d1;
@@ -138,6 +138,66 @@ span{
     color: rgb(181, 178, 178);
     font-size: 1.5rem;
 }
+#info1 h1{
+    visibility: hidden;
+    animation: textan 1s ease forwards;
+}
+#info1 h4{
+    visibility: hidden;
+    animation: textan 1s 0.3s ease forwards;
+}
+#info1 p{
+    visibility: hidden;
+    animation: textan 1s 0.6s ease forwards;
+}
+@keyframes textan {
+    from{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(80px);
+
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes btnanim {
+    from{
+        opacity: 0;
+        transform: scale(0.4);
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes imganim {
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes prtanim {
+    from{
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes ulanim {
+    from{
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+    to{
+        opacity: 1;
+    }
+}
 #info1 #contlink{
     display: flex;
     justify-content: center;
@@ -150,6 +210,7 @@ span{
     font-size: 16px;
     font-weight: bold;
     transition: all 0.3s;
+    animation: btnanim 1.9s ease;
 }
 #info1 #contlink:hover{
     background-color:rgba(255, 255, 255, 0.485) ;
@@ -161,6 +222,7 @@ span{
     object-fit: cover;
     border-radius: 0 25%;
     box-shadow: 10px 10px 10px black;
+    animation: imganim 1.9s;
 }
 .about{
     display: flex;
@@ -353,10 +415,6 @@ h4{
     align-items: center;
     height: 100%;
 }
-
-
-
-
 .contact{
     height: 60vh;
     display: flex;
@@ -465,6 +523,9 @@ h4{
     background-color: #3ba2bb;
 }
 
+
+
+
 @media (max-width:1300px) {
     .all2{
         width: 1000px; ;
@@ -506,7 +567,11 @@ h4{
         justify-content: center;
         align-items: center;
         padding: 0px !important;
+        text-align: center;
         
+    }
+    #info1 h1{
+        white-space: nowrap;
     }
     nav>ul #links{
         display: none;
@@ -514,6 +579,13 @@ h4{
     #equal{
         display: block !important;
         
+    }
+    #equal:hover i{
+    transform: rotateZ(-90deg);
+    }
+    #equal:hover ul{
+        visibility: visible;
+        opacity: 1;
     }
     #about img{
     display: none;
@@ -546,7 +618,7 @@ h4{
         flex-direction: column;
         gap: 50px;
         padding-bottom:20px ;
-        padding-top:40px ;
+        padding-top:40px;
     }
     #contact{
         display: flex;
