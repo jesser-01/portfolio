@@ -5,14 +5,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-/* body{
+body{
     background: linear-gradient(to right, rgb(36, 2, 55),rgb(90, 1, 153));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
-} */
+}
 img{
     height: 100px;
     aspect-ratio: 1/1;
