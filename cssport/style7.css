@@ -568,8 +568,9 @@ h4{
         gap: 50%;
     }
     .contact{
-        height: 100vh;
+        height: 90vh;
         padding-top: 50%;
+        gap: 0;
     }
     .info{
         height: 110vh;
