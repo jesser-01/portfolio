@@ -553,6 +553,7 @@ h4{
         flex-direction:column-reverse;
         height: 300px;
         width: 100%;
+        min-width: 320px;
     }
     #info{
         width: 100%;
@@ -561,6 +562,12 @@ h4{
         width: 100%;
         font-size: 16px;
         height: 20px;
+    }
+    #info1 h1{
+        white-space: nowrap;
+    }
+    #info1{
+        text-align: center;
     }
 }
 @media (max-height:650px) {
